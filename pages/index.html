@@ -56,73 +56,76 @@
           out on the deal of a lifetime...
         </p>
 
-        <div class="container">
-          <form>
-            <i class="fas fa-paper-plane"></i>
+        <div class="wrapper">
+          <main>
+            <div class="container">
+              <h2>User Registration Form</h2>
+              <form id="registrationForm">
+                <div class="input-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    id="username"
+                    required
+                    placeholder="Enter Username"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="Enter Email"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    required
+                    placeholder="Enter Password"
+                    minlength="6"
+                  />
+                </div>
+                <button type="submit" class="submit-button">Register</button>
+                <p id="message"></p>
+              </form>
+            </div>
+          </main>
+        </div>
 
+        <!-- Newsletter Subscription Section -->
+        <div class="newsletter-box">
+          <h2>Subscribe to our Quarterly Newsletter</h2>
+          <p>
+            As new items have been added to the eBay store and when items go on
+            sale!
+          </p>
+
+          <form action="action_page.php" class="newsletter-form">
             <div class="input-group">
-              <label>Full Name</label>
+              <input type="text" placeholder="Name" name="name" required />
+            </div>
+            <div class="input-group">
               <input
-                type="text"
-                placeholder="Enter your name"
-                id="contact-name"
-                onkeyup="validateName()"
+                type="email"
+                placeholder="Email address"
+                name="mail"
+                required
               />
-              <span id="name-error"></span>
             </div>
-
             <div class="input-group">
-              <label>Phone No.</label>
-              <input type="tel" placeholder="123 456 7890" />
-              <span id="phone-error"></span>
+              <label>
+                <input type="checkbox" checked="checked" name="subscribe" />
+                Quarterly Newsletter
+              </label>
             </div>
-
-            <div class="input-group">
-              <label>Email Id</label>
-              <input type="email" placeholder="Enter Email" />
-              <span id="email-error"></span>
-            </div>
-
-            <div class="input-group">
-              <label>Your Message</label>
-              <textarea rows="5" placeholder="Enter your message"></textarea>
-              <span id="message-error"></span>
-            </div>
-
-            <div class="submit">
-              <button>Submit</button>
-              <span id="submit-error"></span>
-            </div>
+            <input type="submit" value="Subscribe" class="submit-button" />
           </form>
         </div>
 
-        <form action="action_page.php">
-          <div class="container">
-            <h2>Subscribe to our Quarterly Newsletter</h2>
-            <p>
-              As new items have been added to the eBay store and when items go
-              on sale!
-            </p>
-          </div>
-
-          <div class="container" style="background-color: black; width: 25%">
-            <input type="text" placeholder="Name" name="name" required />
-            <input
-              type="text"
-              placeholder="Email address"
-              name="mail"
-              required
-            />
-            <label>
-              <input type="checkbox" checked="checked" name="subscribe" />
-              Quarterly Newsletter
-            </label>
-          </div>
-
-          <div class="container">
-            <input type="submit" value="Subscribe" />
-          </div>
-        </form>
         <img
           src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif?cid=790b7611rxovsqm4n8b4g8lz3xzkol6lxosp6pjdhu9863x4&ep=v1_gifs_search&rid=giphy.gif&ct=g"
           alt="auth guarantee"
