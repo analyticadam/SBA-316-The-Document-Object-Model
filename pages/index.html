@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Big Thrifting Reselling</title>
+    <style>
+      form {
+        width: 70%;
+        margin: 30px;
+        margin-left: 70px;
+      }
+
+      .banner {
+        transition-property: width, height;
+        transition-duration: 2s;
+        transition-timing-function: ease-in;
+      }
+
+      .banner:hover {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <aside class="flex-ctr">
+      <nav>
+        <div class="head"><a href="index.html">Home</a></div>
+        <br />
+        <div class="head"><a href="products.html">Products</a></div>
+        <br />
+        <div class="head"><a href="contact.html">Contact Us</a></div>
+        <br />
+      </nav>
+    </aside>
+    <div class="wrapper">
+      <main>
+        <img
+          class="banner"
+          src="../images/eBay Store Billboard 1280x290 px.jpeg"
+          alt="banner"
+        />
+
+        <p style="text-indent: 50px">
+          Welcome to the Big Thrifting Reselling Store! The one stop shop where
+          you can find all of your favorite items from your childhood, items
+          that were discontinued, and unique items that may not be available in
+          your area. Check out some of the items below, you don't want to miss
+          out on the deal of a lifetime...
+        </p>
+
+        <div class="container">
+          <form>
+            <i class="fas fa-paper-plane"></i>
+
+            <div class="input-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your name" />
+              <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+              <label>Phone No.</label>
+              <input type="tel" placeholder="123 456 7890" />
+              <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+              <label>Email Id</label>
+              <input type="email" placeholder="Enter Email" />
+              <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+              <label>Your Message</label>
+              <textarea rows="5" placeholder="Enter your message"></textarea>
+              <span id="message-error"></span>
+            </div>
+
+            <div class="submit">
+              <button>Submit</button>
+              <span id="submit-error"></span>
+            </div>
+          </form>
+        </div>
+
+        <form action="action_page.php">
+          <div class="container">
+            <h2>Subscribe to our Quarterly Newsletter</h2>
+            <p>
+              As new items have been added to the eBay store and when items go
+              on sale!
+            </p>
+          </div>
+
+          <div class="container" style="background-color: black; width: 25%">
+            <input type="text" placeholder="Name" name="name" required />
+            <input
+              type="text"
+              placeholder="Email address"
+              name="mail"
+              required
+            />
+            <label>
+              <input type="checkbox" checked="checked" name="subscribe" />
+              Quarterly Newsletter
+            </label>
+          </div>
+
+          <div class="container">
+            <input type="submit" value="Subscribe" />
+          </div>
+        </form>
+        <img
+          src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif?cid=790b7611rxovsqm4n8b4g8lz3xzkol6lxosp6pjdhu9863x4&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+          alt="auth guarantee"
+        />
+        <footer class="flex-ctr">Copyright 2024-Adam Farley</footer>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

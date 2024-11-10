@@ -1,0 +1,286 @@
+/* h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    color: yellow;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(2, 8, 15);
+  }
+
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: yellow;
+    text-align: left;
+    font-size: 16px;
+    background-color: rgb(2, 8, 15);
+  }
+
+  .button {
+    background-color:#f9d805;
+    border: 3px solid red;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    width: 100px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: darkblue;
+    color: white;
+  }
+
+  /* unvisited link */
+/* a:link {
+  color: whitesmoke;
+}
+
+/* visited link */
+/* a:visited {
+  color: red;
+}
+
+/* mouse over link */
+/* a:hover {
+  color: rgb(66, 161, 169);
+} */
+
+/* selected link */
+/* a:active {
+  color: blue;
+/* } */
+*/ */ */ */ * {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #141a34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .useful-links {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.useful-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+} */
+
+.container form {
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.fa-paper-plane {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  font-size: 26px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+  color: black;
+}
+.input-group label {
+  flex-basis: 28%;
+}
+.input-group input,
+.input-group textarea {
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-size: 16px;
+}
+::placeholder {
+  font-size: 14px;
+}
+
+form button {
+  background: #141a34;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 40px;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 10px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: yellow;
+  text-align: left;
+  font-size: 16px;
+  background-color: rgb(2, 8, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+table,
+th,
+td {
+  border: 0.5px solid yellow;
+  border-collapse: collapse;
+}
+
+.head {
+  order: 3;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  font-family: Helvetica;
+  background-color: #000000;
+}
+
+aside {
+  color: yellow;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* default */
+  height: 100%;
+  width: 200px;
+  font-size: 20px;
+  margin: 10px;
+  color: yellow;
+}
+
+main {
+  color: yellow;
+  width: 100%;
+  height: 90%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+main h1 {
+  justify-content: baseline;
+  color: yellow;
+  padding-left: 20%;
+}
+
+footer {
+  color: yellow;
+}
+
+.flex-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: yellow;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+  /* a:visited {
+    color:aliceblue
+  } */
+}
+
+/* Style the form element with a border around it */
+form {
+  border: 10px solid yellow;
+  padding: 15px;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 10px;
+  background-color: #black;
+}
+
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 25%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: blue;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.input-group span {
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+#submit-error {
+  color: red;
+}
