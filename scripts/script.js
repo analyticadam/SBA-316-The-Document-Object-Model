@@ -4,26 +4,19 @@ const message = document.getElementById("message");
 
 // Cache DOM elements
 const createAccountButton = document.getElementById("create-account");
-const registrationSection = document.getElementById("registration-section");
+const registrationBox = document.querySelector(".registration-box");
 
-//Toggle User Registration Form Visibility
+// Toggle the visibility of the User Registration Form
 createAccountButton.addEventListener("click", () => {
-  // Show the registration form
-  registrationBox.style.display = "block";
-  // Optionally hide the "Create New Account" button after clicking
-  createAccountButton.style.display = "none";
+  // Toggle the display of the registration form
+  if (registrationBox.style.display === "none") {
+    registrationBox.style.display = "block";
+    createAccountButton.textContent = "Hide Registration Form";
+  } else {
+    registrationBox.style.display = "none";
+    createAccountButton.textContent = "Create New Account";
+  }
 });
-
-// // Toggle Registration Form Visibility
-// createAccountButton.addEventListener("click", () => {
-//   if (registrationBox.style.display === "none") {
-//     registrationBox.style.display = "block";
-//     createAccountButton.textContent = "Hide Registration Form";
-//   } else {
-//     registrationBox.style.display = "none";
-//     createAccountButton.textContent = "Create New Account";
-//   }
-// });
 
 // Form Validation and Password Requirements
 form.addEventListener("submit", function (event) {

@@ -1,62 +1,4 @@
-/* h1 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: bold;
-    color: yellow;
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(2, 8, 15);
-  }
-
-  body {
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: yellow;
-    text-align: left;
-    font-size: 16px;
-    background-color: rgb(2, 8, 15);
-  }
-
-  .button {
-    background-color:#f9d805;
-    border: 3px solid red;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    border-radius: 12px;
-    transition-duration: 0.5s;
-    width: 100px;
-    display: block;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background-color: darkblue;
-    color: white;
-  }
-
-  /* unvisited link */
-/* a:link {
-  color: whitesmoke;
-}
-
-/* visited link */
-/* a:visited {
-  color: red;
-}
-
-/* mouse over link */
-/* a:hover {
-  color: rgb(66, 161, 169);
-} */
-
-/* selected link */
-/* a:active {
-  color: blue;
-/* } */
-*/ */ */ */ * {
+* {
   padding: 0;
   margin: 0;
   background-color: #000000;
@@ -274,27 +216,25 @@ body {
   padding: 20px;
   background-color: #000;
 }
-/* Layout for the Registration Section */
-#registration-section {
+
+/* Layout for the Form Container */
+.form-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   background-color: #000;
   padding: 20px;
-  border-radius: 10px;
   gap: 20px;
-  color: yellow;
 }
 
 /* Registration Form Styling */
 .registration-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #333;
   padding: 20px;
   border-radius: 5px;
   max-width: 300px;
+  color: yellow;
+  text-align: center;
 }
 
 /* Centering Inputs in Registration Form */
@@ -330,90 +270,38 @@ body {
   color: yellow;
   text-align: center;
 }
-.submit-button:hover {
-  background-color: #029456;
-}
 
-/* Smaller Toggle Button Styling */
+/* Submit Button Styling */
+.submit-button,
 .toggle-button {
   background-color: #04aa6d;
   color: white;
-  padding: 5px 10px; /* Smaller padding */
-  font-size: 0.9em; /* Smaller font size */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.toggle-button:hover {
-  background-color: #45a049;
-}
-
-/* Form Container for Side-by-Side Layout */
-.form-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px; /* Space between the forms */
-  padding: 20px;
-  flex-wrap: wrap; /* Allow forms to stack on smaller screens */
-}
-
-.registration-box,
-.newsletter-box {
-  flex: 1;
-  max-width: 400px; /* Optional max-width for better control */
-  padding: 20px;
-  border: 2px solid yellow;
-  background-color: rgb(2, 8, 15);
-  color: yellow;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Heading and Paragraph */
-.registration-box h2,
-.newsletter-box h2 {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.newsletter-box p {
-  font-size: 1em;
-  margin-bottom: 20px;
-}
-
-/* Form Input Group Styling */
-.input-group {
-  margin-bottom: 15px;
-}
-
-.input-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.input-group input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid yellow;
-  border-radius: 4px;
-  background-color: black;
-  color: yellow;
-  margin: 5px auto;
-}
-
-/* Submit Button Styling */
-.submit-button {
-  background-color: #04aa6d;
-  color: yellow;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
   margin-top: 10px;
-  width: 100%;
+}
+
+.submit-button:hover,
+.toggle-button:hover {
+  background-color: #029456;
+}
+
+/* Navigation Styles */
+.flex-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head a {
+  text-decoration: none;
+  color: yellow;
+  padding: 0 15px;
+}
+
+.head a:hover {
+  color: blue;
 }

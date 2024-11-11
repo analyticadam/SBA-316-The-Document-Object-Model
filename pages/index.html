@@ -9,37 +9,17 @@
       crossorigin="anonymous"
     ></script>
     <title>Big Thrifting Reselling</title>
-    <style>
-      form {
-        width: 70%;
-        margin: 30px;
-        margin-left: 70px;
-      }
-
-      .banner {
-        transition-property: width, height;
-        transition-duration: 2s;
-        transition-timing-function: ease-in;
-      }
-
-      .banner:hover {
-        width: 100%;
-        height: 400px;
-      }
-    </style>
   </head>
 
   <body>
     <aside class="flex-ctr">
       <nav>
         <div class="head"><a href="index.html">Home</a></div>
-        <br />
-        <div class="head"><a href="index.html">Products</a></div>
-        <br />
+        <div class="head"><a href="products.html">Products</a></div>
         <div class="head"><a href="contact.html">Contact Us</a></div>
-        <br />
       </nav>
     </aside>
+
     <div class="wrapper">
       <main>
         <img
@@ -49,98 +29,92 @@
         />
 
         <p style="text-indent: 50px">
-          Welcome to the Big Thrifting Reselling Store! The one stop shop where
-          you can find all of your favorite items from your childhood, items
-          that were discontinued, and unique items that may not be available in
-          your area. Check out some of the items below, you don't want to miss
-          out on the deal of a lifetime...
+          Welcome to the Big Thrifting Reselling Store! The one-stop shop where
+          you can find all your favorite items from childhood, discontinued
+          items, and unique finds. Don't miss out on these deals!
         </p>
 
-        <div class="wrapper">
-          <main>
-            <!-- Create New Account Button -->
-            <button id="create-account" class="submit-button">
-              Create New Account
-            </button>
+        <!-- Create New Account Button -->
+        <button id="create-account" class="toggle-button">
+          Create New Account
+        </button>
 
-            <!-- Registration Section (Initially Hidden) -->
-            <div id="registration-section" style="display: none">
-              <!-- Registration Box -->
-              <div class="registration-box">
-                <h2>User Registration Form</h2>
-                <form id="registrationForm">
-                  <div class="input-group">
-                    <label for="username">Username</label>
-                    <input
-                      type="text"
-                      id="username"
-                      placeholder="Enter Username"
-                      required
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="Enter Email"
-                      required
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label for="password">Password</label>
-                    <input
-                      type="password"
-                      id="password"
-                      placeholder="Enter Password"
-                      required
-                    />
-                  </div>
-                  <button type="submit" class="submit-button">Register</button>
-                  <p id="message"></p>
-                </form>
+        <!-- Registration Section with Form Hidden Initially -->
+        <div class="form-container">
+          <!-- Registration Box (Initially Hidden) -->
+          <div class="registration-box" style="display: none">
+            <h2>User Registration Form</h2>
+            <form id="registrationForm">
+              <div class="input-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Enter Username"
+                  required
+                />
               </div>
-
-              <!-- Center GIF -->
-              <img
-                class="center-gif"
-                src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif"
-                alt="auth guarantee"
-              />
-
-              <!-- Newsletter Subscription Box -->
-              <div class="newsletter-box">
-                <h2>Subscribe to our Quarterly Newsletter</h2>
-                <p>Get updates when new items are added to our eBay store!</p>
-                <form>
-                  <div class="input-group">
-                    <label for="name">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      placeholder="Enter Name"
-                      required
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label for="email-newsletter">Email</label>
-                    <input
-                      type="email"
-                      id="email-newsletter"
-                      placeholder="Enter Email"
-                      required
-                    />
-                  </div>
-                  <button type="submit" class="submit-button">Subscribe</button>
-                </form>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter Email"
+                  required
+                />
               </div>
-            </div>
-          </main>
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter Password"
+                  required
+                />
+              </div>
+              <button type="submit" class="submit-button">Register</button>
+              <p id="message"></p>
+            </form>
+          </div>
+
+          <!-- Center GIF -->
+          <img
+            class="center-gif"
+            src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif"
+            alt="auth guarantee"
+          />
+
+          <!-- Newsletter Subscription Box -->
+          <div class="newsletter-box">
+            <h2>Subscribe to our Quarterly Newsletter</h2>
+            <p>Get updates on new items and sales!</p>
+            <form>
+              <div class="input-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter Name"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="email-newsletter">Email</label>
+                <input
+                  type="email"
+                  id="email-newsletter"
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+              <button type="submit" class="submit-button">Subscribe</button>
+            </form>
+          </div>
         </div>
-
-        <footer class="flex-ctr">Copyright 2024-Adam Farley</footer>
       </main>
+      <footer class="flex-ctr">Copyright 2024 - Adam Farley</footer>
     </div>
-    <script src="..//scripts/script.js"></script>
+
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
