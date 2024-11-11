@@ -34,7 +34,7 @@
       <nav>
         <div class="head"><a href="index.html">Home</a></div>
         <br />
-        <div class="head"><a href="products.html">Products</a></div>
+        <div class="head"><a href="index.html">Products</a></div>
         <br />
         <div class="head"><a href="contact.html">Contact Us</a></div>
         <br />
@@ -58,81 +58,89 @@
 
         <div class="wrapper">
           <main>
-            <div class="container">
-              <h2>User Registration Form</h2>
-              <form id="registrationForm">
-                <div class="input-group">
-                  <label for="username">Username</label>
-                  <input
-                    type="text"
-                    id="username"
-                    required
-                    placeholder="Enter Username"
-                  />
-                </div>
-                <div class="input-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    required
-                    placeholder="Enter Email"
-                  />
-                </div>
-                <div class="input-group">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    id="password"
-                    required
-                    placeholder="Enter Password"
-                    minlength="6"
-                  />
-                </div>
-                <button type="submit" class="submit-button">Register</button>
-                <p id="message"></p>
-              </form>
+            <!-- Create New Account Button -->
+            <button id="create-account" class="submit-button">
+              Create New Account
+            </button>
+
+            <!-- Registration Section (Initially Hidden) -->
+            <div id="registration-section" style="display: none">
+              <!-- Registration Box -->
+              <div class="registration-box">
+                <h2>User Registration Form</h2>
+                <form id="registrationForm">
+                  <div class="input-group">
+                    <label for="username">Username</label>
+                    <input
+                      type="text"
+                      id="username"
+                      placeholder="Enter Username"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter Email"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="Enter Password"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="submit-button">Register</button>
+                  <p id="message"></p>
+                </form>
+              </div>
+
+              <!-- Center GIF -->
+              <img
+                class="center-gif"
+                src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif"
+                alt="auth guarantee"
+              />
+
+              <!-- Newsletter Subscription Box -->
+              <div class="newsletter-box">
+                <h2>Subscribe to our Quarterly Newsletter</h2>
+                <p>Get updates when new items are added to our eBay store!</p>
+                <form>
+                  <div class="input-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Enter Name"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="email-newsletter">Email</label>
+                    <input
+                      type="email"
+                      id="email-newsletter"
+                      placeholder="Enter Email"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="submit-button">Subscribe</button>
+                </form>
+              </div>
             </div>
           </main>
         </div>
 
-        <!-- Newsletter Subscription Section -->
-        <div class="newsletter-box">
-          <h2>Subscribe to our Quarterly Newsletter</h2>
-          <p>
-            As new items have been added to the eBay store and when items go on
-            sale!
-          </p>
-
-          <form action="action_page.php" class="newsletter-form">
-            <div class="input-group">
-              <input type="text" placeholder="Name" name="name" required />
-            </div>
-            <div class="input-group">
-              <input
-                type="email"
-                placeholder="Email address"
-                name="mail"
-                required
-              />
-            </div>
-            <div class="input-group">
-              <label>
-                <input type="checkbox" checked="checked" name="subscribe" />
-                Quarterly Newsletter
-              </label>
-            </div>
-            <input type="submit" value="Subscribe" class="submit-button" />
-          </form>
-        </div>
-
-        <img
-          src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif?cid=790b7611rxovsqm4n8b4g8lz3xzkol6lxosp6pjdhu9863x4&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-          alt="auth guarantee"
-        />
         <footer class="flex-ctr">Copyright 2024-Adam Farley</footer>
       </main>
     </div>
-    <script src="script.js"></script>
+    <script src="..//scripts/script.js"></script>
   </body>
 </html>
