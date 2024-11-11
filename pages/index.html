@@ -34,15 +34,18 @@
           items, and unique finds. Don't miss out on these deals!
         </p>
 
-        <!-- Create New Account Button -->
-        <button id="create-account" class="toggle-button">
-          Create New Account
-        </button>
-
-        <!-- Registration Section with Form Hidden Initially -->
         <div class="form-container">
-          <!-- Registration Box (Initially Hidden) -->
-          <div class="registration-box" style="display: none">
+          <!-- Create New Account Button -->
+          <button id="create-account" class="toggle-button">
+            Create New Account
+          </button>
+
+          <!-- User Registration Form (Left) -->
+          <div
+            class="registration-box"
+            id="registration-box"
+            style="display: none"
+          >
             <h2>User Registration Form</h2>
             <form id="registrationForm">
               <div class="input-group">
@@ -69,6 +72,17 @@
                   type="password"
                   id="password"
                   placeholder="Enter Password"
+                  minlength="6"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  placeholder="Confirm Password"
+                  minlength="6"
                   required
                 />
               </div>
@@ -77,37 +91,40 @@
             </form>
           </div>
 
-          <!-- Center GIF -->
+          <!-- GIF (Center) -->
           <img
             class="center-gif"
-            src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif"
+            src="https://media.giphy.com/media/kDEcRnMQGUkUKlrEFM/giphy.gif?cid=790b7611rxovsqm4n8b4g8lz3xzkol6lxosp6pjdhu9863x4&ep=v1_gifs_search&rid=giphy.gif&ct=g"
             alt="auth guarantee"
           />
 
-          <!-- Newsletter Subscription Box -->
+          <!-- Newsletter Subscription Section (Right) -->
           <div class="newsletter-box">
             <h2>Subscribe to our Quarterly Newsletter</h2>
-            <p>Get updates on new items and sales!</p>
-            <form>
+            <p>
+              As new items have been added to the eBay store and when items go
+              on sale!
+            </p>
+
+            <form action="action_page.php" class="newsletter-form">
               <div class="input-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Enter Name"
-                  required
-                />
+                <input type="text" placeholder="Name" name="name" required />
               </div>
               <div class="input-group">
-                <label for="email-newsletter">Email</label>
                 <input
                   type="email"
-                  id="email-newsletter"
-                  placeholder="Enter Email"
+                  placeholder="Email address"
+                  name="mail"
                   required
                 />
               </div>
-              <button type="submit" class="submit-button">Subscribe</button>
+              <div class="input-group">
+                <label>
+                  <input type="checkbox" checked="checked" name="subscribe" />
+                  Quarterly Newsletter
+                </label>
+              </div>
+              <input type="submit" value="Subscribe" class="submit-button" />
             </form>
           </div>
         </div>
